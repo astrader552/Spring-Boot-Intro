@@ -1,8 +1,12 @@
 package main.java.search;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class User {
 	
+	@JsonProperty("first_name")
 	private String firstName;
+	@JsonProperty("last_name")
 	private String lastName;
 
 	public User() {};
